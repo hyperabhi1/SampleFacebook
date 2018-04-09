@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SampleFacebook.Views.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="TitleSM" runat="server" />
+    </title>
+    <link rel="stylesheet" type="text/css" href="../Content/Header_Footer.css" />
+    <link rel="stylesheet" type="text/css" href="../Content/Left_Main_Right_content.css" />
+</head>
+
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Songs</a>
+                <a href="#">Services</a>
+                <a href="#">Contact Us</a>
+            </nav>
+        </div>
+    </div>
+    <div style="width: 100%; overflow: hidden;">
+        <div class="LeftContentStyle">
+            <asp:ContentPlaceHolder ID="LeftContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="MainContentStyle">
+            <asp:ContentPlaceHolder ID="ContentArea" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="RightContentStyle">
+            <asp:ContentPlaceHolder ID="RightContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="fixed-footer">
+            <div class="container">Copyright &copy; 2018 Your Avenger</div>
+        </div>
+    </div>
+</body>
+</html>

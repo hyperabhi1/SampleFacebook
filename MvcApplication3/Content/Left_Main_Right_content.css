@@ -1,0 +1,15 @@
+﻿.LeftContentStyle {
+    width: 20%;
+    float: left;
+    background-color:lightblue;
+}
+.MainContentStyle {
+    width: 60%;
+    float: left;
+    background-color:green;
+}
+.RightContentStyle {
+    width: 20%;
+    float: right;
+    background-color:yellow;
+}
