@@ -7,9 +7,9 @@ using System.Web.UI.WebControls;
 using System.Web.Configuration;
 using System.Data.SqlClient;
 
-namespace SampleFacebook.Views
+namespace SampleFacebook.Views.Home
 {
-    public partial class Site : System.Web.UI.MasterPage
+    public partial class Registration : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -20,7 +20,7 @@ namespace SampleFacebook.Views
             SqlConnection con = new SqlConnection(
                 WebConfigurationManager.ConnectionStrings["SampleFacebookDBConn"].ConnectionString);
             con.Open();
-            if (con.State == System.Data.ConnectionState.Open)
+            if(con.State == System.Data.ConnectionState.Open)
             {
                 DisplayMessage(this, "Connection to the database Successful");
             }
